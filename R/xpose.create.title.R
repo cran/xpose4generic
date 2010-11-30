@@ -105,8 +105,7 @@ xpose.create.title.hist <- function(x,object,subset,...){
 
 xpose.create.label <- function(x,object,fun,logx,
                                autocorr.x=FALSE,
-                               autocorr.y=FALSE,
-                               ...){
+                               autocorr.y=FALSE,...){
 
   x.label <- ifelse((length(x)>1),"Value",xlabel(x,object))
 

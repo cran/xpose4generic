@@ -1,7 +1,9 @@
-Xpose 4 Changelog
+Xpose 4 generic changelog
 -----------------
 
 Latest
+  * Fixed compute.cwres() function that wasn't computing anything (and
+    returning an error).
   * Fixed bug in xpose.VPC when asking for logx=T (didn't work
     previously).
   * Fixed dOFV.vs.id for when there are ties in individual dOFV drops.

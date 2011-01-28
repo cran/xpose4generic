@@ -233,7 +233,8 @@ read.cwres.data <-
                               ##,seomega = "data.frame"
                               ,sigma = "data.frame"
                               ##,sesigma = "data.frame",
-                              )
+                              ),
+               where = .GlobalEnv
                )
 
       all.data <- vector("list",nsim)

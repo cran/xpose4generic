@@ -494,13 +494,6 @@ xpose.panel.default(x, y,object,
 
   \item{\dots}{Other arguments that may be needed in the function. }
 }
-\details{
-}
-\value{
-}
 \author{E. Niclas Jonsson, Mats Karlsson, Justin Wilkins and Andrew Hooker}
 \seealso{\code{\link[xpose4data]{xpose.data-class}}, Cross-references above.}
-\examples{
-
-}
 \keyword{methods}

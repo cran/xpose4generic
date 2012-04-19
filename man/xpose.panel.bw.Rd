@@ -159,13 +159,6 @@ xpose.panel.bw(x, y, object,
   \item{bins}{The number of bins to be used. The default is 10.}
   \item{\dots}{Other arguments that may be needed in the function. }
 }
-\details{
-}
-\value{
-}
 \author{E. Niclas Jonsson, Mats Karlsson, Andrew Hooker & Justin Wilkins}
 \seealso{\code{\link[xpose4data]{xpose.data-class}}, Cross-references above.}
-\examples{
-
-}
 \keyword{methods}

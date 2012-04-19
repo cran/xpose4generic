@@ -105,8 +105,6 @@ add.grid.text(txt,
   \item{xpose.table}{A grob object.}
   \item{\dots}{Other arguments passed to the various functions.}
 }
-\details{
-}
 \value{
   A List is returned with the following components
   \item{ystart }{new starting point for new text}

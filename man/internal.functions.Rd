@@ -50,17 +50,8 @@ setup.PPI(PIlimits, PI.mirror, tmp.table, ...)
    \item{tmp.table}{temporary table}
   \item{\dots}{Extra options passed to arguments}
 }
-\details{
-}
 \value{
   Returned to \code{\link[xpose4specific]{xpose.VPC}}
-}
-\references{}
-\author{}
-\note{
-}
-\seealso{}
-\examples{
 }
 \keyword{methods}
 

@@ -36,17 +36,7 @@ xpose.dev.new(...)
   \item{\dots}{Additional arguments to a new graphical device.
     see \code{\link[grDevices]{dev.new}}.}
 }
-\details{
-}
-\value{
-}
 \author{Andrew Hooker}
-\note{
-}
 \seealso{\code{\link[grDevices]{dev.new}}.}
-\examples{
-}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
 \keyword{methods}
 

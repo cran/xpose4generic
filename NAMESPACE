@@ -1,2 +1,2 @@
-import(lattice, grid, Hmisc, gam, methods, xpose4data)
+import(lattice, grid, methods, xpose4data)
 exportPattern("^[^\\.]")

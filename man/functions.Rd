@@ -30,14 +30,10 @@
 \alias{eq.xpose}
 \alias{get.refrunno}
 \alias{xpose.stack}
-\alias{xpose.bin}
+%\alias{xpose.bin}
 \title{Generic internal functions for Xpose 4}
 \description{
   These are internal functions relating to the Xpose generic functions.
-}
-\usage{
-}
-\arguments{
 }
 \details{
   These are internal Xpose functions, for adding ID numbers, computing 
@@ -48,8 +44,4 @@
   Internal helper functions for the generic Xpose functions.
 }
 \author{Justin Wilkins}
-\seealso{
-}
-\examples{
-}
 \keyword{methods}

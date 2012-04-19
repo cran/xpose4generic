@@ -2,9 +2,9 @@
 # An R-based population pharmacokinetic/
 # pharmacodynamic model building aid for NONMEM.
 # Copyright (C) 1998-2004 E. Niclas Jonsson and Mats Karlsson.
-# Copyright (C) 2005-2008 Andrew C. Hooker, Justin J. Wilkins,
+# Copyright (C) 2005-2008 Andrew C. Hooker, Justin J. Wilkins, 
 # Mats O. Karlsson and E. Niclas Jonsson.
-# Copyright (C) 2009-2010 Andrew C. Hooker, Mats O. Karlsson and
+# Copyright (C) 2009-2010 Andrew C. Hooker, Mats O. Karlsson and 
 # E. Niclas Jonsson.
 
 # This file is a part of Xpose 4.

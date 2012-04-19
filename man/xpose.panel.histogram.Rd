@@ -111,13 +111,6 @@ xpose.panel.histogram(x, object,%data,
     or \code{hllty=c("red","blue")}.}  
   \item{\dots}{Other arguments that may be needed in the function. }
 }
-\details{
-}
-\value{
-}
 \author{Andrew Hooker, Mats Karlsson, Justin Wilkins & E. Niclas Jonsson}
 \seealso{\code{\link[xpose4data]{xpose.data-class}}, Cross-references above.}
-\examples{
-
-}
 \keyword{methods}

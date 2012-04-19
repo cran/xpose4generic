@@ -29,10 +29,6 @@
 \description{
   These are internal table functions relating to the Xpose summary functions.
 }
-\usage{
-}
-\arguments{
-}
 \details{
   These are internal Xpose functions for outputting summary tables. They are 
   not intended for direct use.
@@ -41,8 +37,4 @@
   Internal helper functions for the generic Xpose summary functions.
 }
 \author{Niclas Jonsson & Justin Wilkins}
-\seealso{
-}
-\examples{
-}
 \keyword{methods}

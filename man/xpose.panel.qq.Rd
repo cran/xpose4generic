@@ -33,8 +33,6 @@
 }
 \usage{
 xpose.panel.qq(x, object,
-         ylab = ylb,
-         xlab = xlb,
          pch = object@Prefs@Graph.prefs$pch,
          col = object@Prefs@Graph.prefs$col,
          cex = object@Prefs@Graph.prefs$cex,
@@ -48,8 +46,8 @@ xpose.panel.qq(x, object,
 \arguments{
   \item{x}{Name(s) of the x-variable.}
   \item{object}{An xpose.data object. }
-  \item{ylab}{Caption for the y-axis. }
-  \item{xlab}{Caption for the x-axis. }
+  %\item{ylab}{Caption for the y-axis. }
+  %\item{xlab}{Caption for the x-axis. }
   \item{col}{Colour of lines and plot symbols.}
   \item{pch}{Plot character to use.}
   \item{cex}{Amount to scale the plotting character by.}
@@ -61,18 +59,11 @@ xpose.panel.qq(x, object,
     color etc).}
   \item{\dots}{Other arguments that may be needed in the function. }
 }
-\details{
-}
-\value{
-}
 \author{E. Niclas Jonsson, Mats Karlsson, Andrew Hooker & Justin Wilkins}
 \seealso{
 \code{\link[xpose4generic]{xpose.plot.qq}},
 \code{\link[lattice]{qqmath}},
 \code{\link[lattice]{panel.qqmathline}}, 
 \code{\link[xpose4data]{xpose.data-class}}
-}
-\examples{
-
 }
 \keyword{methods}

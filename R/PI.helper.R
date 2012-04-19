@@ -80,16 +80,22 @@
            tmp.table,
            ...
            ){
+
+    #browser()
+    ci.indx <- grep("*.CI.*",names(tmp.table))
+    #names(tmp.table)[[ci.indx[[1]]]]
+    ci.val <- sub("(\\d*)\\.CI\\..*","\\1",names(tmp.table)[[ci.indx[[1]]]],perl=TRUE)
+
     sim.bin.table.cols <- paste(PIlimits*100,"sim",sep=".")
     real.bin.table.cols <- paste(PIlimits*100,"real",sep=".")
-    sim.ci.upper.bin.table.cols <- paste("95.CI.for",PIlimits*100,"to",sep=".")
-    sim.ci.lower.bin.table.cols <- paste("95.CI.for",PIlimits*100,"from",sep=".")
+    sim.ci.upper.bin.table.cols <- paste(ci.val,"CI.for",PIlimits*100,"to",sep=".")
+    sim.ci.lower.bin.table.cols <- paste(ci.val,"CI.for",PIlimits*100,"from",sep=".")
 
     sim.bin.table.cols.50 <- paste(50,"sim",sep=".")
     real.bin.table.cols.50 <- paste(50,"real",sep=".")
-    sim.ci.upper.bin.table.cols.50 <- paste("95.CI.for",50,"to",sep=".")
-    sim.ci.lower.bin.table.cols.50 <- paste("95.CI.for",50,"from",sep=".")
-    
+    sim.ci.upper.bin.table.cols.50 <- paste(ci.val,"CI.for",50,"to",sep=".")
+    sim.ci.lower.bin.table.cols.50 <- paste(ci.val,"CI.for",50,"from",sep=".")
+
     mir.bin.table.cols <- NULL
     mir.bin.table.cols.50 <- NULL
     mir.names.lower <- NULL

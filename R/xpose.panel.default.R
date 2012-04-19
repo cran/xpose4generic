@@ -685,7 +685,7 @@
       trellis.par.set("plot.symbol",outset)
 
       panel.bwplot(x,y,
-                   horiz=bwhoriz,
+                   horizontal=bwhoriz,
                    col=bwdotcol,
                    pch=bwdotpch,
                    cex=bwdotcex,

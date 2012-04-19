@@ -54,13 +54,14 @@ sqrtm <- function(x) {
 {
   ## If we are not dealing with R -> Splus
   if(is.null(version$language)) {
-    if(platform() == "WIN386") {
-      access(filename, 4) == 0
-    } else {
-      filename <- paste("'", filename, "'", sep = "")
-      sapply(paste("test -f", filename, "-a -r", filename), unix,
-             output = F) == 0
-    }
+    cat("This version of Xpose uses R")
+    ## if(platform() == "WIN386") {
+    ##   access(filename, 4) == 0
+    ## } else {
+    ##   filename <- paste("'", filename, "'", sep = "")
+    ##   sapply(paste("test -f", filename, "-a -r", filename), unix,
+    ##          output = F) == 0
+    ## }
   } else {
     return(file.exists(filename)[1])
   }    
@@ -102,10 +103,10 @@ read.cwres.data <-
             cat("using this old file convention\n")
             return(NULL)
           } else {
-            data <- read.table(filename,skip=1,h=T)
+            data <- read.table(filename,skip=1,header=T)
           }
         } else {
-          data <- read.table(filename,skip=1,h=T)
+          data <- read.table(filename,skip=1,header=T)
         }
         size.of.sim <- dim(data)[1]/nsim
         data[,"iteration.number"] <- sort(rep(1:nsim,size.of.sim))
@@ -155,17 +156,17 @@ read.cwres.data <-
             tempfile<- paste(deriv.file,".xptmp",sep="")
             write.table(tmp[-c(inds,inds2)],file=tempfile,
                         row.names=FALSE,quote=FALSE)
-            data <- read.table(tempfile,skip=2,h=T)
+            data <- read.table(tempfile,skip=2,header=T)
             unlink(tempfile)
 
             ## add iteration label to data
             nsim <- length(inds)+1       
           
           } else {
-            data <- read.table(deriv.file,skip=1,h=T)
+            data <- read.table(deriv.file,skip=1,header=T)
           }
         } else {
-          data <- read.table(deriv.file,skip=1,h=T)
+          data <- read.table(deriv.file,skip=1,header=T)
         }
         size.of.sim <- dim(data)[1]/nsim
         data[,"iteration.number"] <- sort(rep(1:nsim,size.of.sim))
@@ -433,7 +434,9 @@ compute.cwres <-
         id.vals <- unique(dataset@data$ID)
         CWRES <- c()
         for(i in id.vals){
-          ind.data <- subset(dataset@data,ID==i)
+          #browser()
+          #ind.data <- subset(dataset@data,ID==i)
+          ind.data <- dataset@data[dataset@data$ID==i,]
           ind.etas <- t(as.matrix(all.etas[all.etas$ID==i,colnames(all.etas)!="ID"]))
           CWRESI <- ind.cwres(ind.data,
                               H.names,
@@ -500,8 +503,9 @@ compute.cwres <-
           if(is.null(dataset@data$MDV)){
           } else {
             ## bind the data to the data file
-            data.cwres <- cbind(dataset@data,CWRES)          
-            tmp <- subset(data.cwres,MDV==0)
+            data.cwres <- cbind(dataset@data,CWRES)
+            tmp <- data.cwres[data.cwres$MDV==0,]
+            #tmp <- subset(data.cwres,MDV==0)
             CWRES <- tmp$CWRES
           }
         }
@@ -521,8 +525,9 @@ compute.cwres <-
           if(is.null(data1$MDV)){
           } else {
             ## bind the data to the data file
-            data1.cwres <- cbind(data1,CWRES)          
-            tmp <- subset(data1.cwres,MDV==0)
+            data1.cwres <- cbind(data1,CWRES)
+            tmp <- data1.cwres[data1.cwres$MDV==0,]
+            #tmp <- subset(data1.cwres,MDV==0)
             CWRES <- tmp$CWRES
           }
         }

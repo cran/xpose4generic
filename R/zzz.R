@@ -2,9 +2,9 @@
 # An R-based population pharmacokinetic/
 # pharmacodynamic model building aid for NONMEM.
 # Copyright (C) 1998-2004 E. Niclas Jonsson and Mats Karlsson.
-# Copyright (C) 2005-2008 Andrew C. Hooker, Justin J. Wilkins,
+# Copyright (C) 2005-2008 Andrew C. Hooker, Justin J. Wilkins, 
 # Mats O. Karlsson and E. Niclas Jonsson.
-# Copyright (C) 2009-2010 Andrew C. Hooker, Mats O. Karlsson and
+# Copyright (C) 2009-2010 Andrew C. Hooker, Mats O. Karlsson and 
 # E. Niclas Jonsson.
 
 # This file is a part of Xpose 4.
@@ -21,10 +21,6 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with this program.  A copy can be cound in the R installation
 # directory under \share\licenses. If not, see http://www.gnu.org/licenses/.
-
-.First.lib <- function(libname, pkgname) {
-    require(xpose4data)
-}
 
 .onLoad <- function(libname, pkgname) {
     create.xpose.plot.classes()

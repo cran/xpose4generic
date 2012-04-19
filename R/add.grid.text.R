@@ -119,7 +119,7 @@ add.grid.text <- function(txt,
           #xpose.table <- addGrob(gTree=xpose.table, child=xpose.line)
 
         }
-        xpose.text <- grid.text(new.txt,x=xstart,y=(ystart-over.space),just=c("left","top"),check=TRUE,...)
+        xpose.text <- grid.text(new.txt,x=xstart,y=(ystart-over.space),just=c("left","top"),check.overlap=TRUE,...)
         xpose.table <- addGrob(gTree=xpose.table, child=xpose.text)
         ystart <- ystart-tot.ht
       } else {

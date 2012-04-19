@@ -24,10 +24,10 @@
 
 addid <- function(x,y,
                   ids   = ids,
-                  idsmode=obj@Prefs@Graph.prefs$idsmode,
-                  idsext =obj@Prefs@Graph.prefs$idsext,
-                  idscex= obj@Prefs@Graph.prefs$idscex,
-                  idsdir= obj@Prefs@Graph.prefs$idsdir,
+                  idsmode=NULL,
+                  idsext =0.05,
+                  idscex= 0.7,
+                  idsdir= "both",
                   gridmode=TRUE
                   )  {
 

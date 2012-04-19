@@ -144,7 +144,7 @@ xpose.plot.default(x,y,object,
     the variable specified by \code{by} is taken as categorical.}
   \item{ordby}{A string with the name of a variable to be used to
     reorder any factor conditioning variables (\code{by}). The variable
-    is used in a call to the \code{\link{reorder.factor}} function. }
+    is used in a call to the \code{reorder.factor} function. }
   \item{byordfun}{The name of the function to be used when reordering a
     factor conditioning variable (see argument \code{ordby})}
   \item{shingnum}{The number of shingles ("parts") a continuous

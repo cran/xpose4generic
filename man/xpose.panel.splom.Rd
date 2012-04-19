@@ -113,10 +113,6 @@ xpose.panel.splom(x, y, object,
   %\item{scales}{A list to be used for the \code{scales} argument in \code{\link[lattice]{xyplot}}.}
   \item{\dots}{Other arguments that may be needed in the function. }
 }
-\details{
-}
-\value{
-}
 \author{E. Niclas Jonsson, Mats Karlsson, Andrew Hooker & Justin Wilkins}
 \seealso{
 \code{\link[xpose4generic]{xpose.plot.splom}},
@@ -125,8 +121,5 @@ xpose.panel.splom(x, y, object,
 \code{\link[lattice]{splom}},
 \code{\link[lattice]{panel.splom}},
 \code{\link[lattice]{panel.pairs}}
-}
-\examples{
-
 }
 \keyword{methods}

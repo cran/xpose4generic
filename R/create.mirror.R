@@ -69,7 +69,7 @@ create.mirror <- function(fun,arg.list,mirror,plotTitle,
   }
   
   ## Set the seed number and decide what simulated data sets to plot
-  if(!is.null(arg.list$seed)) set.seed(seed)
+  if(!is.null(arg.list$seed)) set.seed(arg.list$seed)
   rand.samp <- sample(1:arg.list$object@Nsim,mirror)
 
   ## size of labels

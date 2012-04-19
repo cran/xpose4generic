@@ -165,7 +165,7 @@
           } else {
 
             if(any(!is.null(ordby))) {
-              data[,b] <- reorder.factor(data[,b],data[,ordby],byordfun)
+              data[,b] <- reorder(data[,b],data[,ordby],byordfun)
             }
 
             if(names(data[,b,drop=F])!="ind") {

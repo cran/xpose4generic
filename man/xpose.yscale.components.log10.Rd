@@ -48,11 +48,7 @@ default R scales). These functions are used as input to the
 \code{\link[lattice:axis.default]{xscale.components}} argument in a
   lattice plot.
 }
-\value{
-}
 \author{Andrew Hooker}
-\note{
-}
 \seealso{
   \code{\link{xpose.plot.default}}
   \code{\link[lattice:axis.default]{xscale.components}}

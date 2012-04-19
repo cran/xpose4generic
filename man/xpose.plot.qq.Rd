@@ -82,7 +82,7 @@ xpose.plot.qq(x, object,
     the variable specified by \code{by} is taken as categorical.}
   \item{ordby}{A string with the name of a variable to be used to
     reorder any factor conditioning variables (\code{by}). The variable
-    is used in a call to the \code{\link{reorder.factor}} function. }
+    is used in a call to the \code{reorder} function. }
   \item{byordfun}{The name of the function to be used when reordering a
     factor conditioning variable (see argument \code{ordby}).}
   \item{shingnum}{The number of shingles ("parts") a continuous
@@ -123,10 +123,6 @@ xpose.plot.qq(x, object,
   \item{\dots}{Other arguments passed to
     \code{\link[xpose4generic]{xpose.plot.qq}}.}
   
-}
-\details{
-}
-\value{
 }
 \author{E. Niclas Jonsson, Mats Karlsson, Andrew Hooker & Justin Wilkins}
 \seealso{

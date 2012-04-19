@@ -524,24 +524,6 @@ C     open files here, if necessary
 %
 % ~Make other sections like Warning with \section{Warning }{....} ~
 %}
-\seealso{
-  \code{\link[xpose4specific]{absval.cwres.vs.cov.bw}},
-  \code{\link[xpose4specific]{absval.cwres.vs.pred.by.cov}},
-  \code{\link[xpose4specific]{absval.cwres.vs.pred}},
-  \code{\link[xpose4specific]{autocorr.cwres}},
-  \code{\link[xpose4specific]{ind.plots.cwres.hist}},
-  \code{\link[xpose4specific]{ind.plots.cwres.qq}},
-  \code{\link[xpose4specific]{cwres.dist.hist}},
-  \code{\link[xpose4specific]{cwres.dist.qq}},
-  \code{\link[xpose4specific]{cwres.vs.cov}},
-  \code{\link[xpose4specific]{cwres.vs.idv.bw}},
-  \code{\link[xpose4specific]{cwres.vs.idv}},
-  \code{\link[xpose4specific]{cwres.vs.pred.bw}}
-  \code{\link[xpose4specific]{cwres.wres.vs.pred}}
-  \code{\link[xpose4specific]{cwres.wres.vs.idv}}
-  \code{\link[xpose4specific]{basic.gof.cwres}}
-}
-
 \examples{
 \dontrun{
 ## Capture CWRES from cwtab5.est and cwtab5.deriv

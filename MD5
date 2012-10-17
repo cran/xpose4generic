@@ -1,4 +1,4 @@
-ad25670c53cb89acbedaa3b411d1535d *DESCRIPTION
+19d187fe90547a8c3d00da31a4d757bb *DESCRIPTION
 6e1bb0c592555e692d2ae286e60243d5 *NAMESPACE
 60c29e37e60493fe64422de49f6635c1 *R/PI.helper.R
 1e96e057628c08245e24715772efc5f7 *R/add.grid.table.R
@@ -35,8 +35,8 @@ f40dcc2a9934ab0ad070cbb2631cbeab *R/xpose.plot.qq.R
 41ede2a083307269f51c70d71cbabd80 *R/xpose.string.print.R
 2e2c6fe3866cfa7133c43eccaabfdc76 *R/zzz.R
 8af910abc1b2d5072c93e9004d2c1a97 *inst/CITATION
-172ca3d39a0e0b7b2e215481810fff70 *inst/changelog.txt
-7be8dbe5703d9ade36aa752f23d7f09a *inst/readme.txt
+5d327cb470677f812c82c7893fa64f22 *inst/changelog.txt
+65b6b73ca13facddf8f7b87fa932d52e *inst/readme.txt
 e8c40e5494caa209bbf6949e53d6b8d0 *man/add.grid.table.Rd
 382b4e8fc12591066e9198865b94abab *man/compute.cwres.Rd
 69dd78880519750f97398d1e9ca6b57f *man/create.mirror.Rd

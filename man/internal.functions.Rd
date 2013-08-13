@@ -31,7 +31,9 @@
  Internal functions for the VPC
 }
 \usage{
-find.right.table(object, inclZeroWRES, onlyfirst, samp, PI.subset, subscripts, PI.bin.table, panel.number, ...)
+find.right.table(object, inclZeroWRES, onlyfirst, 
+                 samp, PI.subset, subscripts, 
+                 PI.bin.table, panel.number, ...)
 get.polygon.regions(PPI, PI.mirror, ...)
 setup.PPI(PIlimits, PI.mirror, tmp.table, ...)
 }

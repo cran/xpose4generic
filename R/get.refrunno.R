@@ -38,8 +38,9 @@
       ##
       ## Use old
       ##
-      assign(pos = 1, database, eval(as.name(paste("xpdb", 
+      c1<-call("assign",pos = 1, database, eval(as.name(paste("xpdb", 
                new.runno, sep = ""))))
+      eval(c1)
       return(new.runno)
     }
   }
@@ -53,8 +54,10 @@
     return()
   } else {
     newnam <- paste("xpdb", new.runno, sep = "")
-    assign(pos = 1, newnam, newdb)
-    assign(pos = 1, database,newdb )
+    c2<-call("assign",pos = 1, newnam, newdb)
+    eval(c2)
+    c3<-call("assign",pos = 1, database,newdb )
+    eval(c3)
   }
   return(new.runno)
 }

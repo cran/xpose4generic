@@ -89,7 +89,8 @@
         
     if (classic==TRUE) {
       #.cur.db <- object
-      assign(pos = 1, ".cur.db",object)
+      c1<-call("assign",pos = 1, ".cur.db",object)
+      eval(c1)
     }
     
     invisible(object)

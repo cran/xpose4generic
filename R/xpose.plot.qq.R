@@ -236,6 +236,7 @@ xpose.plot.qq <-
                       pch=pch,
                       col=col,
                       cex=cex,
+                      strip=strip,
                       ...)
 
 

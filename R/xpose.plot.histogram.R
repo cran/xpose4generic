@@ -243,6 +243,7 @@ xpose.plot.histogram <-
                          hiborder = hiborder,
                          hilty = hilty,
                          hilwd = hilwd,
+                         strip=strip,
                          hicol = hicol)
       
       
